@@ -1,5 +1,9 @@
 function sayHello(){
     console.log("Hi")
 }
-let user= "Blaise"
-console.log(sayHello() + "user" );
+
+function doSomething(callBack){
+    console.log("I am doing something ...");
+    callBack();
+}
+doSomething(sayHello);
