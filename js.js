@@ -7,3 +7,4 @@ function doSomething(callBack){
     callBack();
 }
 doSomething(sayHello);
+
