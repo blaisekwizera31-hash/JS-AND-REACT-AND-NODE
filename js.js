@@ -45,3 +45,7 @@ var server = http.createServer(function(req, res){
 
 server.listen(3000);
 module.exports = log
+
+for( i=0; i<6; i++){
+    console.log("Hello world");
+}
