@@ -18,3 +18,14 @@ const evens = numbers.map(function(num){
     return num%2 ==0;
 });
 console.log(evens) ;
+
+const even = numbers.filter(function(num){
+    return num%2 ==0;
+});
+
+console.log(even);
+
+const odds = numbers.filter(function(number){
+    return number %2 != 0;
+});
+console.log(odds);
