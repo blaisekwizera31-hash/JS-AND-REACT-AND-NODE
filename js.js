@@ -29,3 +29,19 @@ const odds = numbers.filter(function(number){
     return number %2 != 0;
 });
 console.log(odds);
+
+var http = require('http');
+var server = http.createServer(function(req, res){
+
+    var log = {
+        function info(info){
+            console.log('info:' + info);
+        },
+        function warning(warning){
+            console.log('warning: ' + warning)
+        }
+    }
+});
+
+server.listen(3000);
+module.exports = log
