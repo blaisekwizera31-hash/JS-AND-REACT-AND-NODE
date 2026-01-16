@@ -89,3 +89,6 @@ function Identity(age){
 const blaise = new Identity(45);
 console.log(blaise)
 console.log(blaise.names())
+
+//abstraction
+ 
