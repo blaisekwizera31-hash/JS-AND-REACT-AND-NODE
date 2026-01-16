@@ -50,20 +50,42 @@
 //     console.log("Hello world");
 // }
 
-const identity = {
-    names: 'blaise',
-    age : 30
-};
+// const identity = {
+//     names: 'blaise',
+//     age : 30
+// };
 
-for(let key in identity){
-    for(let value in identity){
-        console.log(key + " : " + value)
+// for(let key in identity){
+//     for(let value in identity){
+//         console.log(key + " : " + value)
+//     }
+// }
+// function walk(){
+//     console.log("walking");
+
+// }
+
+// walk()
+// console.log(walk());
+
+// function createCircle(radius){
+//     return {
+//         radius ,
+//         draw(){
+//             console.log("draw")
+//         }
+//     }
+// }
+// console.log(createCircle(4));
+
+//construcor function
+
+function Identity(age){
+    this.age = age,
+    this.names = function(){
+        console.log("Blaise");
     }
 }
-function walk(){
-    console.log("walking");
-
-}
-
-walk()
-console.log(walk());
+const blaise = new Identity(45);
+console.log(blaise)
+console.log(blaise.names())
